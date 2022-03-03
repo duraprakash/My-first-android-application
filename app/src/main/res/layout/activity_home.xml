@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="#6A6A60"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/rounded">
+            <ImageView
+                android:id="@+id/imagemenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_baseline_menu_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journey Journal"
+                android:textColor="@color/white"
+                android:layout_marginStart="40dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <ImageView
+                android:id="@+id/imgnotification"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_baseline_notifications_24"
+                />
+            <ImageView
+                android:id="@+id/imgsearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_baseline_search_24"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Page "
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/redressed_regular"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Page "
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/redressed_regular"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:menu="@menu/bottom_items"
+            android:elevation="2dp"
+            android:layout_alignParentBottom="true"
+            app:itemIconSize="30dp"
+            app:labelVisibilityMode="unlabeled"
+            android:background="@drawable/btn_selector"
+
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="enter_email">Email</string>
+    <string name="enter_password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password_details">Provide your account details for which you
+    want to reset your password.</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="confirm">Confirm</string>
+    <string name="reset">Send Reset Link</string>
+
+    <string name="Home">Home</string>
+    <string name="About">About</string>
+    <string name="Share">Share</string>
+    <string name="Contact">Contact</string>
+    <string name="Setting">Setting</string>
+    <string name="Support">Support</string>
+    <string name="Send">Send</string>
+
+</resources>
